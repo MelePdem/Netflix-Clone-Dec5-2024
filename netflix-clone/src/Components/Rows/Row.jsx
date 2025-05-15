@@ -1,4 +1,4 @@
-
+// npm install --save-dev github-pages
 import react, { useEffect, useState } from "react";
 import "./Rows.css";
 import axios from "../../Utils/axios";
