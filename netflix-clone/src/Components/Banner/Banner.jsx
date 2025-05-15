@@ -2,30 +2,28 @@
 import React, { useEffect, useState } from "react";
 
 import './Banner.css'
-import Banner from '../../Components/Banner/Banner'
-import axios from '../../Utils/axios' //manually imported
+// import Banner from '../../Components/Banner/Banner'
+import axios from "../../Utils/axios";
 import requests from "../../Utils/requests";
 
-
-  const Banner = () => {
+const Banner = () => {
+    
     const [movie, setMovie] = useState([]);
     useEffect(() => {
       (async () => {
         try {
           const request = await axios.get(requests.fetchNetflixOriginals);
-          console.log(request);
+          // console.log(request);
           setMovie(
             request.data.results[
             Math.floor(Math.random() * request.data.results.length)
             ]
           );
         } catch (error) {
-          console.log("error", error);
+          // console.log("error", error);
         }
       })();
     }, []);
-
-
 
 
     function truncate(str, n) {

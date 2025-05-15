@@ -1,18 +1,22 @@
 .Footer_outer_container{
     background-color: #111;
-    color: gray;
+    /* color: gray; */
+    color:white;
     display: flex;
     justify-content: center;
 }
 .Footer_inner_container{
-    width: 60%;
+    /* width: 60%; */
+    width: 90%;
 }
 .Footer_icons{
     width: 12%;
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    color: #fff;
+    /* color: #fff; */
+    color: yellow;
+    
     
 }
 .footer_data{

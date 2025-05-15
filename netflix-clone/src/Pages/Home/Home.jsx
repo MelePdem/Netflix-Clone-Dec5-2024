@@ -6,8 +6,9 @@ const Home = () => {
   return (
     <>
       <Header />
+      <Bannner />
+      <Rowlist />
       <Footer />
-
     </>
   );
 }
