@@ -16,7 +16,7 @@ export default [
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
-    },
+    }, 
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
